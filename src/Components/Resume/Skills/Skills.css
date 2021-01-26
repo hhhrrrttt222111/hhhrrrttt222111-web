@@ -1,0 +1,34 @@
+.skills {
+    margin: 3rem;
+    height: 100vh;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.skills_container {
+    display: flex;
+}
+
+.skills_right, .skills_left {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.skill_box {
+    padding: 1.2rem;
+}
+
+.skill_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_footer > h3 {
+    margin-top: 0.45rem;
+    font-size: 1.35rem;
+    font-weight: 500;
+    font-family: -webkit-pictograph;
+}

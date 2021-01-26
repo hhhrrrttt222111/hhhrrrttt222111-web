@@ -1,0 +1,25 @@
+.projects {
+    padding: 3rem;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_container {
+    padding: 3rem !important;
+}
+
+
+.projects > button {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: cadetblue;
+    color: wheat;
+}
+.projects > button:hover {
+    background-color: rgba(95, 158, 160, 0.801);
+}

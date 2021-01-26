@@ -1,0 +1,30 @@
+.navbar {
+    padding: 1rem;
+    margin: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    background-color: black;
+    color: azure;
+    border-radius: 999px;
+}
+
+.navbar_left {
+    flex: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar_left > a > span {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}

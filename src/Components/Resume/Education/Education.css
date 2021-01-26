@@ -1,0 +1,19 @@
+.education {
+    margin: 3rem;
+    height: 100vh;
+    margin-bottom: 1rem;
+}
+
+.education_timeline {
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+
+.school_icons {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.MuiTimelineItem-root {
+    min-height: 170px !important;
+}
