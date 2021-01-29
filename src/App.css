@@ -1,14 +1,23 @@
 [data-theme="light"]{
     --text-color: black;
+    --text-color-secondary: black;
     --background-color: white;
+    --nav-item-color: black;
+    --navbar-color: #b3ffcc;
+    --main-bg-color: #d4fababb;
 }
   
 [data-theme="dark"]{
     --text-color: #fcfcfc;
+    --text-color-secondary: white;
     --background-color: #1d1c1cb7;
+    --nav-item-color: white;
+    --navbar-color: black;
+    --main-bg-color: #181a1b;
 }
 
 /* .app{
     color: var(--text-color);
     background-color: var(--background-color);
 } */
+

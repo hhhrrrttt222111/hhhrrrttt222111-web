@@ -6,9 +6,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;  
-    background-color: black;
+    background-color: var(--navbar-color);
     color: azure;
     border-radius: 999px;
+}
+
+.navbar > h3 {
+    color: var(--nav-item-color);
 }
 
 .navbar_left {
@@ -23,8 +27,75 @@
     margin-right: 1rem;
     font-size: 0.9rem;
     text-decoration: none;
+    color: var(--nav-item-color);
     font-weight: 800;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.drawer {
+    position: relative;
+}
+
+.menuDrawerIcon {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none !important;
+}
+
+.theme-toggler {
+    position: absolute !important;
+    top: 14px !important;
+    right: 20px !important;
+}
+
+.nav_icon {
+    position: relative;
+    top: 8px;
+    font-size: 1.75rem;
+    margin-right: 1.4rem;
+}
+
+.drawerListitem {
+    color: var(--drawer-item-color) !important;
+}
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .navbar_left > a > span {
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        display: none;
+    }
+    .menuDrawerIcon {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+  }

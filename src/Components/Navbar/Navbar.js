@@ -1,25 +1,151 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useRef, useEffect } from 'react'
+import { IconButton, MenuItem, ListItem, ListItemText, Drawer, Divider, List, Paper, Avatar, MenuList, Popper } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core'
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
+import { IoMdHome, IoIosPerson, IoIosPaper, IoIosBook, IoMdCode, IoMdCall } from "react-icons/io";
 
 import { ThemeContext } from '../../lib/context'
 
 
 import './Navbar.css'
 
+
+
+
+
 function Navbar() {
 
     const { theme, setTheme } = useContext(ThemeContext);
+
+    const [open, setOpen] = useState(false);
 
     const handleThemeToggle = (e) => {
       e.preventDefault();
       setTheme(theme === 'light'? 'dark' : 'light');
     }
 
+    const handleDrawerOpen = () => {
+        setOpen(true);
+    };
+
+    const handleDrawerClose = () => {
+        setOpen(false);
+    };
+
+    const useStyles = makeStyles({
+        MuiDrawer: {
+            padding:'1em 1.8em',
+            width:'11em',
+            fontFamily:' Roboto',
+            fontStyle:' normal',
+            fontWeight:' normal',
+            fontSize:' 24px',
+            backgroundColor: theme === 'light' ? 'white' : 'black',
+        },
+        drawerItem: {
+            color: theme === 'light' ? 'black' : 'white',
+        },
+        closebtnIcon: {
+            color: theme === 'light' ? 'black' : 'white',
+            fontSize: '1.85rem',
+            cursor: 'pointer'
+        }
+    });
+
+    const classes = useStyles();
+
     return (
+        <>
+
+            <IconButton
+                    style={{borderRadius: '100%', color: '#33ff33'}}
+                    disableFocusRipple={true}
+                    disableRipple={true}
+                    onClick={handleDrawerOpen}
+                    className="menuDrawerIcon"
+                >
+                    <MenuIcon style={{fontSize: '2.5rem'}}/>
+            </IconButton>
         <nav className="navbar">
+            <Drawer     
+                variant="temporary"
+                onBackdropClick={handleDrawerClose}
+                onEscapeKeyDown={handleDrawerClose}
+                anchor="left"
+                open={open}
+                classes={{ paper: classes.MuiDrawer }}
+                className="drawer"
+            >
+                <div className="div-closebtn">
+                    <CloseIcon onClick={handleDrawerClose} className={classes.closebtnIcon}/>
+                </div><br/>
+                <IconButton onClick={handleThemeToggle} className="theme-toggler">
+                                {theme === 'light'? <Brightness2Icon style={{color: 'gray'}}/> : <WbSunnyIcon style={{color: 'yellow'}}/>}
+                </IconButton>
+                <div onClick={handleDrawerClose}>
+                <List>
+                    <NavLink to="/#home" className="drawerLinks" smooth={true} spy="true" duration={2000}>
+                        <ListItem className={classes.drawerItem}>
+                            <ListItemText>
+                               <IoMdHome className="nav_icon"/> HOME
+                            </ListItemText>
+                        </ListItem>
+                    </NavLink>
+                    <Divider className="drawer-divider"/>
+
+                    <NavLink to="/#about" className="drawerLinks" smooth={true} spy="true" duration={2000}>
+                        <ListItem className={classes.drawerItem}>
+                            <ListItemText>
+                                <IoIosPerson className="nav_icon"/> ABOUT
+                            </ListItemText>
+                        </ListItem>
+                    </NavLink>
+                    <Divider className="drawer-divider"/>
+
+                    <NavLink to="/#resume" className="drawerLinks" smooth={true} spy="true" duration={2000}>
+                        <ListItem className={classes.drawerItem}>
+                            <ListItemText>
+                                <IoIosPaper className="nav_icon"/> RESUME
+                            </ListItemText>
+                        </ListItem>
+                    </NavLink>
+                    <Divider className="drawer-divider"/>
+
+                    <NavLink to="/#projects" className="drawerLinks" smooth={true} spy="true" duration={2000}>
+                        <ListItem className={classes.drawerItem}>
+                            <ListItemText>
+                                <IoMdCode className="nav_icon"/>PROJECTS
+                            </ListItemText>
+                        </ListItem>
+                    </NavLink>
+                    <Divider className="drawer-divider"/>
+
+                    <NavLink to="/#blog" className="drawerLinks" smooth={true} spy="true" duration={2000}>
+                        <ListItem className={classes.drawerItem}>
+                            <ListItemText>
+                                <IoIosBook className="nav_icon"/> BLOG
+                            </ListItemText>
+                        </ListItem>
+                    </NavLink>
+                    <Divider className="drawer-divider"/>
+
+                    <NavLink to="/#contact" className="drawerLinks" smooth={true} spy="true" duration={2000}>
+                        <ListItem className={classes.drawerItem}>
+                            <ListItemText>
+                                <IoMdCall className="nav_icon"/> CONTACT
+                            </ListItemText>
+                        </ListItem>
+                    </NavLink>
+                    
+                </List>
+                </div>
+            </Drawer>
+
             <h3>@hhhrrrttt222111</h3>
             <div className="navbar_left">
                 <NavLink to="/#home" smooth={true} spy="true" duration={2000}>
@@ -42,12 +168,14 @@ function Navbar() {
                 </NavLink>     
             </div>
             <div className="navbar_right">
-                <Button onClick={handleThemeToggle}>
+                <Button onClick={handleThemeToggle} disableRipple disableTouchRipple disableFocusRipple>
                     {theme === 'light'? <Brightness2Icon style={{color: 'gray'}}/> : <WbSunnyIcon style={{color: 'yellow'}}/>}
                 </Button>
             </div>
 
         </nav>
+
+        </>
     )
 }
 

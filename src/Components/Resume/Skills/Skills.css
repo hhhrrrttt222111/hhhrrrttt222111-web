@@ -1,6 +1,6 @@
 .skills {
     margin: 3rem;
-    height: 100vh;
+    height: 100%;
     margin-bottom: 1rem;
     margin-top: 0;
 }
@@ -31,4 +31,60 @@
     font-size: 1.35rem;
     font-weight: 500;
     font-family: -webkit-pictograph;
+}
+
+
+
+@media (min-width: 1180px) and (max-width: 1380px) {
+    .skills {
+        margin: 1rem;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1180px) {
+    .skills {
+        margin: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .skills {
+        margin: 1rem;
+    }
+    .skills_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills_right {
+        padding: 0;
+    }
+    .skills_left {
+        padding: 0;
+        padding-top: 2rem;
+    }
+    .skill_box {
+        padding: 1rem;
+    }
+    .skill_footer > h3 {
+        margin-top: 0.25rem;
+        font-size: 1.05rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
 }

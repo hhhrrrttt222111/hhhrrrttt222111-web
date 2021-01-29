@@ -47,9 +47,10 @@
     border-radius: 20px;
 }
 
-.bodyTop {
+.bodyTop, .bodyBottom {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .bodyTop > p {
@@ -98,6 +99,7 @@
     text-transform: uppercase;
     font-weight: 700;
     border-color: green;
+    white-space: nowrap !important;
     color: green;
     background-image: linear-gradient(45deg, green 50%, transparent 50%);
     background-position: 100%;
@@ -123,4 +125,128 @@
     border-style: solid;
     border-width: 50px 0 50px 86.6px;
     border-color: transparent transparent transparent aquamarine;
+}
+
+
+@media (min-width: 1180px) and (max-width: 1380px) {
+    .aboutBody {
+        margin: 1rem;
+    }
+    .bodyTop > p {
+        padding: 2rem;
+        width: 300px;
+        font-size: 16px;
+    }
+    .bodyBottom > p {
+        padding: 2rem;
+        font-size: 16px;
+    }
+    .line{
+        position: relative;
+        right: -9%;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1180px) {
+    .aboutBody {
+        margin: 1rem;
+    }
+    .bodyTop > p {
+        padding: 0.7rem;
+        width: 250px;
+        font-size: 16px;
+    }
+    .bodyBottom > p {
+        padding: 0.7rem;
+        font-size: 16px;
+    }
+    
+    .line{
+        position: relative;
+        right: -11%;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .about {
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .about_header {
+        margin: 2rem;
+        margin-left: 3rem; 
+    }
+
+    .about_header > h1 {
+        font-size: 39px;
+        line-height: 1.2;
+        font-weight: 800;
+    }
+    
+    .about_header > h4 {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .aboutBody {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .aboutRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .line{
+        display: none;
+    }
+    .about_Left {
+        margin: 1rem;
+        padding: 2rem;
+        background-color: aquamarine;
+        border-radius: 20px;
+    }
+    .bodyTop {
+        display: flex;
+        flex-direction: column;
+    }
+    .bodyTop > p {
+        padding: 2rem;
+        padding-top: 0;
+        width: 100%;
+        font-size: 16px;
+    }
+    .bodyBottom > p {
+        padding: 0rem;
+        font-size: 16px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
 }
