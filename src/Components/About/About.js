@@ -40,7 +40,12 @@ function About() {
                     </div>
                 </div>
                 <div className="aboutRight">
-                    <img src={temp} alt="" />
+                    <div className="about_img">
+                        <div class="ch-info">
+                            <p>Hey!</p>
+                        </div>
+                    </div>
+                    {/* <img src={temp} alt="" /> */}
                     <Button variant="outlined">Hire me</Button>
                 </div>
             </div>

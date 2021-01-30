@@ -1,23 +1,28 @@
 [data-theme="light"]{
     --text-color: black;
-    --text-color-secondary: black;
+    --text-color-grey: #1a1a1a;
+    --text-color-secondary: white;
     --background-color: white;
     --nav-item-color: black;
     --navbar-color: #b3ffcc;
-    --main-bg-color: #d4fababb;
+    --main-bg-color: #4dff88;
+    --about-text: black;
+    --about-avatar: rgba(0, 0, 0, .8);
 }
   
 [data-theme="dark"]{
-    --text-color: #fcfcfc;
-    --text-color-secondary: white;
+    --text-color: white;
+    --text-color-grey: #e6e6e6;
+    --text-color-secondary: black;
     --background-color: #1d1c1cb7;
     --nav-item-color: white;
     --navbar-color: black;
     --main-bg-color: #181a1b;
+    --about-text: white;
+    --about-avatar: rgba(0, 179, 60, 0.8);
 }
 
-/* .app{
-    color: var(--text-color);
-    background-color: var(--background-color);
-} */
+.app{
+    background-color: var(--main-bg-color);
+}
 

@@ -20,7 +20,11 @@ const BorderLinearProgress = withStyles((theme) => ({
 }))(LinearProgress);
 
 
-function Skills() {
+function Skills({ theme }) {
+
+    const barColor = theme === 'light'? '#009933' : '#595959'
+
+
     return (
         <div className="skills">
             <h2>Skills</h2> 
@@ -28,61 +32,61 @@ function Skills() {
             <div className="skills_container">
                 <div className="skills_left">
                     <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={95} color="red"/>
+                        <BorderLinearProgress variant="determinate" value={95} color={barColor}/>
                         <div className="skill_footer">
                             <h3>HTML/CSS/JS</h3>
                             <h3>95%</h3>
                         </div>
                     </div>
                     <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={90} color="blue"/>
+                        <BorderLinearProgress variant="determinate" value={90} color={barColor}/>
                             <div className="skill_footer">
                             <h3>React JS</h3>
-                            <h3>95%</h3>
+                            <h3>90%</h3>
                         </div>
                     </div>
                     <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={80} color="red"/>
+                        <BorderLinearProgress variant="determinate" value={80} color={barColor}/>
                             <div className="skill_footer">
                             <h3>Flutter</h3>
-                            <h3>95%</h3>
+                            <h3>80%</h3>
                         </div>
                     </div>
                     <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={78} color="black"/>
+                        <BorderLinearProgress variant="determinate" value={78} color={barColor}/>
                             <div className="skill_footer">
                             <h3>Firebase</h3>
-                            <h3>95%</h3>
+                            <h3>78%</h3>
                         </div>
                     </div>
                 </div>
                 <div className="skills_right">
                     <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={88} color="green"/>
+                        <BorderLinearProgress variant="determinate" value={88} color={barColor}/>
                             <div className="skill_footer">
                             <h3>Python</h3>
-                            <h3>95%</h3>
+                            <h3>88%</h3>
                         </div>
                     </div>
                     <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={70} color="yellow"/>
+                        <BorderLinearProgress variant="determinate" value={70} color={barColor}/>
                             <div className="skill_footer">
                             <h3>Django/Flask</h3>
-                            <h3>95%</h3>
+                            <h3>70%</h3>
                         </div>
                     </div>
                     <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={85} color="pink"/>
+                        <BorderLinearProgress variant="determinate" value={85} color={barColor}/>
                             <div className="skill_footer">
                             <h3>C/C++</h3>
-                            <h3>95%</h3>
+                            <h3>85%</h3>
                         </div>
                     </div>
                     <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={92} color="orange"/>
+                        <BorderLinearProgress variant="determinate" value={92} color={barColor}/>
                             <div className="skill_footer">
                             <h3>Java</h3>
-                            <h3>95%</h3>
+                            <h3>92%</h3>
                         </div>
                     </div>
                 </div>

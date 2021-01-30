@@ -130,6 +130,7 @@ function Projects() {
     return (
         <div className="projects" id="projects">
             <h1>Projects</h1>
+            <h4>My Works</h4>
             <Grid container direction="row" justify="center" alignItems="center" className="projects_container">
                 {projects.slice(0, cards).map(project => (
                     <ProjectCard 

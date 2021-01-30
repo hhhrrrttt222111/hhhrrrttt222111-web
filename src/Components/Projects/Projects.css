@@ -5,6 +5,24 @@
     flex-direction: column;
 }
 
+.projects > h1 {
+    font-size: 55px;
+    color: var(--text-color-grey);
+    line-height: 1.2;
+    letter-spacing: -2px;
+    font-weight: 500;
+    font-family: 'Alef', sans-serif;
+}
+
+.projects > h4 {
+    font-size: 25px;
+    color: var(--text-color-grey);
+    line-height: 1.2;
+    font-weight: 900;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
 .projects_container {
     padding: 3rem !important;
 }

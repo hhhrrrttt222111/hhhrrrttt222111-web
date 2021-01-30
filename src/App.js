@@ -8,13 +8,13 @@ import { ThemeContext } from "./lib/context";
 
 function App() {
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   return (
     <ThemeContext.Provider value={{theme, setTheme}}>
       <Router>
         <div className="app" data-theme={theme}>
-            <Landing />
+            <Landing theme={theme}/>
         </div>
       </Router>
 

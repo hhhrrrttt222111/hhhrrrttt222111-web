@@ -1,8 +1,17 @@
 .skills {
-    margin: 3rem;
+    padding: 3rem;
     height: 100%;
     margin-bottom: 1rem;
     margin-top: 0;
+
+}
+
+.skills > h2 {
+    letter-spacing: -2px;
+    font-weight: 500;
+    font-family: 'Alef', sans-serif;
+    font-size: 40px;
+    color: var(--text-color-grey);
 }
 
 .skills_container {
@@ -30,7 +39,8 @@
     margin-top: 0.45rem;
     font-size: 1.35rem;
     font-weight: 500;
-    font-family: -webkit-pictograph;
+    color: var(--text-color-grey);
+    font-family: 'Alef', sans-serif;
 }
 
 
@@ -54,6 +64,7 @@
 @media screen and (max-width: 992px) {
     .skills {
         margin: 1rem;
+        padding: 0;
     }
     .skills_container {
         display: flex;

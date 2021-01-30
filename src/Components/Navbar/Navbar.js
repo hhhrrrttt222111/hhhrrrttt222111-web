@@ -16,8 +16,6 @@ import './Navbar.css'
 
 
 
-
-
 function Navbar() {
 
     const { theme, setTheme } = useContext(ThemeContext);
@@ -63,7 +61,7 @@ function Navbar() {
         <>
 
             <IconButton
-                    style={{borderRadius: '100%', color: '#33ff33'}}
+                    style={{borderRadius: '100%', color: theme === 'light' ? '#181a1b' : '#4dff88'}}
                     disableFocusRipple={true}
                     disableRipple={true}
                     onClick={handleDrawerOpen}

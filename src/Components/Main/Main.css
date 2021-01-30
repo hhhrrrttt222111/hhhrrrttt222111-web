@@ -52,6 +52,7 @@
     margin-bottom: 2.5rem;
     font-size: 1.7rem;
     color: var(--text-color);
+    font-family: 'Alef', sans-serif;
 }
 
 .main_right > p {
@@ -59,6 +60,7 @@
     width: 70%;
     font-size: 1.25rem;
     color: var(--text-color);
+    font-family: 'Courgette', cursive;
 }
 
 a {
@@ -73,12 +75,18 @@ a {
     padding: 1.8rem;
     border-radius: 99px;
     font-size: 14px;
-    color: black;
+    color: var(--text-color);
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     background: transparent;
-    border: 1px solid #585d65;
+    border: 1px solid var(--text-color);
+}
+
+.main_right > a > button:hover {
+  color: var(--text-color);
+  background-color: var(--text-color-secondary);
+  border: 1px solid var(--text-color-secondary);
 }
 
 #section07 {
@@ -208,6 +216,16 @@ a {
     color: white;
     font-size: 1.15rem;
   }
+
+  .main_right > a > button {
+    color: white;
+    border: 1px solid white;
+}
+
+
+  #section07 {
+    display: none;
+}
 }
 
 @media screen and (max-width: 800px) {

@@ -6,7 +6,7 @@ import { Navbar, Main, About, Resume, Projects, Blog, Contact } from '../../Comp
 import './Landing.css'
 
 
-function Landing() {
+function Landing({ theme }) {
     
     return (
         <div className="landing">
@@ -20,7 +20,7 @@ function Landing() {
                 <About />
             </div>
             <div className="landing_resume">
-                <Resume />
+                <Resume theme={theme}/>
             </div>
             <div className="landing_projects">
                 <Projects />

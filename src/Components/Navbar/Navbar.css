@@ -9,10 +9,16 @@
     background-color: var(--navbar-color);
     color: azure;
     border-radius: 999px;
+    box-shadow: 11px 8px 41px -7px rgba(196,234,196,0.39);
+    -webkit-box-shadow: 11px 8px 41px -7px rgba(196,234,196,0.39);
+    -moz-box-shadow: 11px 8px 41px -7px rgba(196,234,196,0.39);
 }
 
 .navbar > h3 {
     color: var(--nav-item-color);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;    
 }
 
 .navbar_left {
@@ -29,7 +35,7 @@
     text-decoration: none;
     color: var(--nav-item-color);
     font-weight: 800;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Oxygen Mono', monospace;
     text-decoration: none;
     text-transform: uppercase;
 }

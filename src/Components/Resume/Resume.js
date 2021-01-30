@@ -4,11 +4,11 @@ import Skills from './Skills/Skills'
 
 import './Resume.css'
 
-function Resume() {
+function Resume({ theme }) {
     return (
         <div className="resume" id="resume">
-            <Education />
-            <Skills />
+            {/* <Education /> */}
+            <Skills theme={theme}/>
         </div>  
     )
 }
