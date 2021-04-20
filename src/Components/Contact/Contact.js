@@ -8,6 +8,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import ModeCommentIcon from '@material-ui/icons/ModeComment';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 
+import Fade from 'react-reveal/Fade';
+
 import { FaFacebookF, FaInstagram, FaTwitter, FaGithub, FaLinkedinIn, FaRedditAlien, FaBloggerB } from "react-icons/fa";
 
 import db from '../../firebase';
@@ -170,6 +172,7 @@ function Contact() {
                     </div>
                 </div>
                 <div className="contact_bodyRight">
+                    <Fade bottom>
                     <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noreferrer">
                         <FaInstagram className="footer_icon"/>
                     </a>
@@ -191,11 +194,12 @@ function Contact() {
                     <a href="https://hackzism.blogspot.com/" target="_blank" rel="noreferrer">
                         <FaBloggerB className="footer_icon"/>
                     </a>
+                    </Fade>
                     
                 </div>
             </div>
             <div className="contact_footer">
-               <h4>Copyright © {yr} HRT</h4>
+               <h4>Copyright © {yr} | HRT 👾</h4>
             </div>
         </div>
     )

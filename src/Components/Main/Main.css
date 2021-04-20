@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 .main {
     display: flex;
     height: 100vh;
@@ -236,6 +238,7 @@ a {
   .main_right > p {
     color: white;
     font-size: 1.05rem;
+    font-family: 'Raleway', sans-serif;
   }
 }
 

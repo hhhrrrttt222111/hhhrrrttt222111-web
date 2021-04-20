@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Button, Grid } from '@material-ui/core';
 
+import Fade from 'react-reveal/Fade';
+
 import ProjectCard from './ProjectCard/ProjectCard'
 
 import './Projects.css'
@@ -131,20 +133,22 @@ function Projects() {
         <div className="projects" id="projects">
             <h1>Projects</h1>
             <h4>My Works</h4>
-            <Grid container direction="row" justify="center" alignItems="center" className="projects_container">
-                {projects.slice(0, cards).map(project => (
-                    <ProjectCard 
-                      img={project.img} 
-                      title={project.title} 
-                      description={project.description} 
-                      framework={project.framework}
-                      dialogImg={project.dialogImg}
-                      technology={project.technology}
-                      github={project.github}
-                      website={project.website}
-                    />
-                ))}
-            </Grid>
+            <Fade bottom>
+                <Grid container direction="row" justify="center" alignItems="center" className="projects_container">
+                    {projects.slice(0, cards).map(project => (
+                        <ProjectCard 
+                        img={project.img} 
+                        title={project.title} 
+                        description={project.description} 
+                        framework={project.framework}
+                        dialogImg={project.dialogImg}
+                        technology={project.technology}
+                        github={project.github}
+                        website={project.website}
+                        />
+                    ))}
+                </Grid>
+            </Fade>
             {cards === 5 ? (
                 <Button onClick={handleLoad}>
                     Show More

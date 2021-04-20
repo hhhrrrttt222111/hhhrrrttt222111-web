@@ -2,6 +2,8 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
+import Fade from 'react-reveal/Fade';
+
 import './Skills.css'
 
 const BorderLinearProgress = withStyles((theme) => ({
@@ -32,64 +34,80 @@ function Skills({ theme }) {
 
             <div className="skills_container">
                 <div className="skills_left">
-                    <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={95} color={barColor}/>
-                        <div className="skill_footer">
-                            <h3>HTML/CSS/JS</h3>
-                            <h3>95%</h3>
-                        </div>
-                    </div>
-                    <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={90} color={barColor}/>
+                    <Fade bottom>
+                        <div className="skill_box">
+                            <BorderLinearProgress variant="determinate" value={95} color={barColor}/>
                             <div className="skill_footer">
-                            <h3>React JS</h3>
-                            <h3>90%</h3>
+                                <h3>HTML/CSS/JS</h3>
+                                <h3>95%</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={80} color={barColor}/>
-                            <div className="skill_footer">
-                            <h3>Flutter</h3>
-                            <h3>80%</h3>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="skill_box">
+                            <BorderLinearProgress variant="determinate" value={90} color={barColor}/>
+                                <div className="skill_footer">
+                                <h3>React JS</h3>
+                                <h3>90%</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={78} color={barColor}/>
-                            <div className="skill_footer">
-                            <h3>Firebase</h3>
-                            <h3>78%</h3>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="skill_box">
+                            <BorderLinearProgress variant="determinate" value={80} color={barColor}/>
+                                <div className="skill_footer">
+                                <h3>Flutter</h3>
+                                <h3>80%</h3>
+                            </div>
                         </div>
-                    </div>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="skill_box">
+                            <BorderLinearProgress variant="determinate" value={78} color={barColor}/>
+                                <div className="skill_footer">
+                                <h3>Firebase</h3>
+                                <h3>78%</h3>
+                            </div>
+                        </div>
+                    </Fade>
                 </div>
                 <div className="skills_right">
-                    <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={88} color={barColor}/>
-                            <div className="skill_footer">
-                            <h3>Python</h3>
-                            <h3>88%</h3>
+                    <Fade top>
+                        <div className="skill_box">
+                            <BorderLinearProgress variant="determinate" value={88} color={barColor}/>
+                                <div className="skill_footer">
+                                <h3>Python</h3>
+                                <h3>88%</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={70} color={barColor}/>
-                            <div className="skill_footer">
-                            <h3>Django/Flask</h3>
-                            <h3>70%</h3>
+                    </Fade>
+                    <Fade top>
+                        <div className="skill_box">
+                            <BorderLinearProgress variant="determinate" value={70} color={barColor}/>
+                                <div className="skill_footer">
+                                <h3>Django/Flask</h3>
+                                <h3>70%</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={85} color={barColor}/>
-                            <div className="skill_footer">
-                            <h3>C/C++</h3>
-                            <h3>85%</h3>
+                    </Fade>
+                    <Fade top>
+                        <div className="skill_box">
+                            <BorderLinearProgress variant="determinate" value={85} color={barColor}/>
+                                <div className="skill_footer">
+                                <h3>C/C++</h3>
+                                <h3>85%</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="skill_box">
-                        <BorderLinearProgress variant="determinate" value={92} color={barColor}/>
-                            <div className="skill_footer">
-                            <h3>Java</h3>
-                            <h3>92%</h3>
+                    </Fade>
+                    <Fade top>
+                        <div className="skill_box">
+                            <BorderLinearProgress variant="determinate" value={92} color={barColor}/>
+                                <div className="skill_footer">
+                                <h3>Java</h3>
+                                <h3>92%</h3>
+                            </div>
                         </div>
-                    </div>
+                    </Fade>
                 </div>
             </div>
         </div>

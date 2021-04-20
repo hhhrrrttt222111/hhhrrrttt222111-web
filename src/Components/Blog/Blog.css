@@ -104,7 +104,6 @@
 
     .blog > h1 {
         font-size: 45px;
-        color: var(--text-color-grey);
         line-height: 1.2;
     }
 
@@ -115,7 +114,13 @@
 }
 
 @media screen and (max-width: 800px) {
-
+  .blogCard > a > h2 {
+    font-family: 'Raleway', sans-serif;
+  }
+  .blog > h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
 }
 
 @media screen and (max-width: 600px) {

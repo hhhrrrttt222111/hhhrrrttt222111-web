@@ -5,6 +5,7 @@
     --text-color-secondary: white;
     --background-color: white;
     --nav-item-color: black;
+    --drawer-particles: #00b33c;
     --navbar-color: #b3ffcc;
     --main-bg-color: #80ffaa;
     --about-text: black;
@@ -28,6 +29,7 @@
     --text-color-secondary: black;
     --background-color: #1d1c1cb7;
     --nav-item-color: white;
+    --drawer-particles: #80ffaa;
     --navbar-color: black;
     --main-bg-color: #181a1b;
     --about-text: white;

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Grid, Paper } from '@material-ui/core'
 
+import Fade from 'react-reveal/Fade';
+
 import './Education.css'
 
 function Education() {
@@ -13,27 +15,33 @@ function Education() {
 
             <div className="education_container">
                 <Grid container direction="row" justify="center" alignItems="center">
-                    <Grid item xs={12} md={6} className="education_item">
-                        <Paper elevation={21} className="education_paper">
-                            <h5>2005 - 2007</h5>
-                            <h3>Bhavans Bala Mandir, Eroor</h3>
-                            <h4>Primary Secondary Education</h4>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={12} md={6} className="education_item">
-                        <Paper elevation={21} className="education_paper">
-                            <h5>2007 - 2019</h5>
-                            <h3>Bhavans Vidya Mandir, Eroor</h3>
-                            <h4>Higher Secondary Education</h4>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={12} md={6} className="education_item">
-                        <Paper elevation={21} className="education_paper">
-                            <h5>2019 - Present</h5>
-                            <h3>Model Enginnering College, Thrikkakara</h3>
-                            <h4>B.Tech in Computer Science</h4>
-                        </Paper>
-                    </Grid>
+                    <Fade left>
+                        <Grid item xs={12} md={6} className="education_item">
+                            <Paper elevation={21} className="education_paper">
+                                <h5>2005 - 2007</h5>
+                                <h3>Bhavans Bala Mandir, Eroor</h3>
+                                <h4>Primary Secondary Education</h4>
+                            </Paper>
+                        </Grid>
+                    </Fade>
+                    <Fade right>
+                        <Grid item xs={12} md={6} className="education_item">
+                            <Paper elevation={21} className="education_paper">
+                                <h5>2007 - 2019</h5>
+                                <h3>Bhavans Vidya Mandir, Eroor</h3>
+                                <h4>Higher Secondary Education</h4>
+                            </Paper>
+                        </Grid>
+                    </Fade>
+                    <Fade left>
+                        <Grid item xs={12} md={6} className="education_item">
+                            <Paper elevation={21} className="education_paper">
+                                <h5>2019 - Present</h5>
+                                <h3>Model Enginnering College, Thrikkakara</h3>
+                                <h4>B.Tech in Computer Science</h4>
+                            </Paper>
+                        </Grid>
+                    </Fade>
                 </Grid>
             </div> 
 

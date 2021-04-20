@@ -43,13 +43,13 @@ function Navbar() {
             fontStyle:' normal',
             fontWeight:' normal',
             fontSize:' 24px',
-            backgroundColor: theme === 'light' ? 'white' : 'black',
+            backgroundColor: theme === 'light' ? '#e6ffee' : 'black',
         },
         drawerItem: {
-            color: theme === 'light' ? 'black' : 'white',
+            color: theme === 'light' ? '#003311' : '#80ffaa',
         },
         closebtnIcon: {
-            color: theme === 'light' ? 'black' : 'white',
+            color: theme === 'light' ? '#003311' : '#80ffaa',
             fontSize: '1.85rem',
             cursor: 'pointer'
         }
@@ -83,7 +83,7 @@ function Navbar() {
                     <CloseIcon onClick={handleDrawerClose} className={classes.closebtnIcon}/>
                 </div><br/>
                 <IconButton onClick={handleThemeToggle} className="theme-toggler">
-                                {theme === 'light'? <Brightness2Icon style={{color: 'gray'}}/> : <WbSunnyIcon style={{color: 'yellow'}}/>}
+                                {theme === 'light'? <Brightness2Icon style={{color: '#003311'}}/> : <WbSunnyIcon style={{color: '#80ffaa'}}/>}
                 </IconButton>
                 <div onClick={handleDrawerClose}>
                 <List>
@@ -141,6 +141,9 @@ function Navbar() {
                     </NavLink>
                     
                 </List>
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
                 </div>
             </Drawer>
 
@@ -168,7 +171,7 @@ function Navbar() {
             </div>
             <div className="navbar_right">
                 <Button onClick={handleThemeToggle} disableRipple disableTouchRipple disableFocusRipple>
-                    {theme === 'light'? <Brightness2Icon style={{color: 'gray'}}/> : <WbSunnyIcon style={{color: 'yellow'}}/>}
+                    {theme === 'light'? <Brightness2Icon style={{color: '#003311'}}/> : <WbSunnyIcon style={{color: '#80ffaa'}}/>}
                 </Button>
             </div>
 
