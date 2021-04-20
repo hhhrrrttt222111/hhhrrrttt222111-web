@@ -4,3 +4,14 @@
   margin: 0;
 }
 
+
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

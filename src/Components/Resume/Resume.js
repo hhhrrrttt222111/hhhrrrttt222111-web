@@ -7,7 +7,7 @@ import './Resume.css'
 function Resume({ theme }) {
     return (
         <div className="resume" id="resume">
-            {/* <Education /> */}
+            <Education />
             <Skills theme={theme}/>
         </div>  
     )

@@ -1,17 +1,29 @@
 [data-theme="light"]{
     --text-color: black;
+    --text-color-bold: #262626;
     --text-color-grey: #1a1a1a;
     --text-color-secondary: white;
     --background-color: white;
     --nav-item-color: black;
     --navbar-color: #b3ffcc;
-    --main-bg-color: #4dff88;
+    --main-bg-color: #80ffaa;
     --about-text: black;
     --about-avatar: rgba(0, 0, 0, .8);
+    --project-card: #b3ffcc;
+    --framework-color: #181a1b;
+    --blog-bg-color: #00cc44;
+    --blog-button: rgba(32, 43, 25, 0.925);
+    --contact-input-bg: #66ff66;
+    --footer-icon-color: #1a1a1a;
+    --education-paper: #1aff66;
+    --education-h5: #38342e;
+    --education-h4: black;
+    --copyright-bg-color: #b3ffb3;
 }
   
 [data-theme="dark"]{
     --text-color: white;
+    --text-color-bold: #737373;
     --text-color-grey: #e6e6e6;
     --text-color-secondary: black;
     --background-color: #1d1c1cb7;
@@ -20,6 +32,16 @@
     --main-bg-color: #181a1b;
     --about-text: white;
     --about-avatar: rgba(0, 179, 60, 0.8);
+    --project-card: #333333;
+    --framework-color: #80ffaa;
+    --blog-bg-color: #262626;
+    --blog-button : greenyellow;
+    --contact-input-bg: #333333;
+    --footer-icon-color: #66ff66;
+    --education-paper: #303436;
+    --education-h5: #4effa7;
+    --education-h4: #e8e6e3;
+    --copyright-bg-color: #262626;
 }
 
 .app{

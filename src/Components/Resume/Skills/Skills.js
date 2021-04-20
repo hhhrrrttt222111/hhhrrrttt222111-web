@@ -25,6 +25,7 @@ function Skills({ theme }) {
     const barColor = theme === 'light'? '#009933' : '#595959'
 
 
+
     return (
         <div className="skills">
             <h2>Skills</h2> 

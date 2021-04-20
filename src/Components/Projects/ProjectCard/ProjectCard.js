@@ -34,7 +34,7 @@ const styles = (theme) => ({
         <Typography variant="h6">{children}</Typography>
         {onClose ? (
           <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
-            <CloseIcon />
+            <CloseIcon style={{color: 'rgba(0, 0, 0, 0.87)'}}/>
           </IconButton>
         ) : null}
       </MuiDialogTitle>
@@ -74,7 +74,7 @@ function ProjectCard({ img, title, description, framework, dialogImg, technology
                 <h3 className="project_title">{title}</h3>
                 <Button onClick={handleClickOpen}>View Details</Button>
             </div>
-            <Dialog onClose={handleClose} aria-labelledby={title} open={open}>
+            <Dialog onClose={handleClose} aria-labelledby={title} open={open} style={{color: 'red'}}>
                 <DialogTitle id={title} onClose={handleClose}>
                     {title}
                 </DialogTitle>

@@ -1,19 +1,145 @@
 .education {
     margin: 3rem;
     height: 100vh;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
-.education_timeline {
-    padding: 3rem;
-    padding-bottom: 1rem;
+.education > h2 {
+    letter-spacing: -2px;
+    font-weight: 500;
+    font-family: 'Alef', sans-serif;
+    font-size: 40px;
+    color: var(--text-color-grey);
 }
 
-.school_icons {
-    font-size: 1.5rem;
-    padding: 0.5rem;
+.education > h4 {
+    font-size: 25px;
+    color: var(--text-color-grey);
+    line-height: 1.2;
+    font-weight: 900;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
 }
 
-.MuiTimelineItem-root {
-    min-height: 170px !important;
+.education_container {
+    margin: 2rem;
+    margin-top: 1rem;
+}
+
+.education_container > .MuiGrid-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.education_item {
+    margin-top: 3rem !important;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.education_paper {
+    padding: 1rem 4rem 1rem 4rem;
+    width: 300px;
+    background-color: var(--education-paper) !important;
+}
+
+.education_paper > h5 {
+    color: var(--education-h5);
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0.30rem;
+    font-family: 'Oxygen Mono';
+}
+.education_paper > h3 {
+    color: var(--education-h4);
+    font-size: 18px;
+    margin-bottom: 1.60rem;
+    font-family: 'Alef', sans-serif;
+}
+.education_paper > h4 {
+    color: var(--education-h4);
+    font-size: 18px;
+    opacity: 0.8;
+    font-family: 'Alef', sans-serif;
+    font-weight: lighter;
+}
+
+@media (min-width: 1180px) and (max-width: 1380px) {
+    .education {
+        margin: 2rem;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1180px) {
+    .education {
+        margin: 1rem;
+    }
+    .education_container {
+        margin: 1rem;
+    }
+    .education_container > .MuiGrid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .education_container {
+        margin: 2rem;
+        margin-top: 1rem;
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .education {
+        margin: 1rem;
+        height: 100%;
+    }
+    .education_container {
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+
+    .education_item {
+        margin-top: 1.5rem !important;
+        padding: 1rem;
+    }
+
+    .education_paper {
+        padding: 1rem 2rem 1rem 2rem;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .education_paper {
+        padding: 1rem 0.8rem 1rem 0.8rem;
+        width: 260px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .education_item {
+        margin-top: 1.5rem !important;
+        padding: 1rem;
+    }
+
+    .education_paper {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        width: 250px;
+    }
 }

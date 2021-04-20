@@ -46,7 +46,7 @@ function Blog() {
             </Grid>
 
             <a href="https://hackzism.blogspot.com/" target="_blank" rel="noreferrer">
-                <Button>Visit Blog</Button>
+                <Button className="btn draw-border">Visit Blog</Button>
             </a>
         </div>
     )

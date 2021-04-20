@@ -6,7 +6,7 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 
 import hrt from '../../assets/hrt.jpg'
-import web from '../../assets/web.pdf'
+import HemanthR from '../../assets/HemanthR.pdf'
 
 import './Main.css'
 
@@ -22,9 +22,9 @@ function Main() {
 
                 <div className="main_right">
                     <TextLoop springConfig={{ stiffness: 180, damping: 8 }} interval={2000} noWrap={true} mask={true}>
-                        <h3>PROGRAMMER</h3>
-                        <h3>FRONTEND DEVELOPER</h3>
-                        <h3>HACKER</h3>
+                        <h3>{`< PR0GRAMM3R />`}</h3>
+                        <h3>{`{ FR0NTEND DEVEL0PER }`}</h3>
+                        <h3>{` HÂÇʞëŘ ;`}</h3>
                     </TextLoop>
                     <p>
                         loremlorem loremloremlor emlorem loremlorem loremlore
@@ -32,7 +32,7 @@ function Main() {
                         loremlore mloremloremlorem loremlor  emloremloremloreml
                         oremloreml oremloremlorem
                     </p>
-                    <a href={web} download="Hemanth_CV">
+                    <a href={HemanthR} download="Hemanth_CV">
                         <Button size="large" endIcon={<ArrowDownwardIcon />}>
                             Download CV
                         </Button>

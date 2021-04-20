@@ -4,3 +4,18 @@
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 992px) {
+    .resume {
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .resume {
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+}

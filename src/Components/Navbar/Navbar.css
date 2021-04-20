@@ -68,6 +68,10 @@
     color: var(--drawer-item-color) !important;
 }
 
+.navbar_right > button {
+    border-radius: 50%;
+}
+
 /* MEDIA QUERIES */
 
 

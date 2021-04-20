@@ -1,7 +1,6 @@
 import React, { useContext, useState, useRef, useEffect } from 'react'
-import { IconButton, MenuItem, ListItem, ListItemText, Drawer, Divider, List, Paper, Avatar, MenuList, Popper } from '@material-ui/core'
+import { IconButton, Button, ListItem, ListItemText, Drawer, Divider, List } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core'
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
@@ -13,6 +12,7 @@ import { ThemeContext } from '../../lib/context'
 
 
 import './Navbar.css'
+import HrtDialog from './HrtDialog/HrtDialog';
 
 
 
@@ -144,7 +144,8 @@ function Navbar() {
                 </div>
             </Drawer>
 
-            <h3>@hhhrrrttt222111</h3>
+            <HrtDialog />
+            
             <div className="navbar_left">
                 <NavLink to="/#home" smooth={true} spy="true" duration={2000}>
                     <span>Home</span>

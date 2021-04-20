@@ -68,6 +68,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.hey {
+    margin-bottom: 1rem;
+    line-height: 180%;
+    opacity: 0.8;
+}
+
 .bodyBottom > p {
     padding: 2rem;
     font-size: 18px;
@@ -103,7 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../../assets/svg/temp.svg');
+    background-image: url('../../assets/dp.jpeg');
     background-repeat: no-repeat; 
     background-size: cover;
     height: 180px;
@@ -161,7 +167,7 @@
     opacity: 1;
 }
 
-.aboutRight > button {
+.aboutRight > a > button {
     margin-top: 3rem;
     box-sizing: border-box;
     font-family: 'Alef', sans-serif;
@@ -189,7 +195,7 @@
 }
 
 
-.aboutRight > button:hover {
+.aboutRight > a > button:hover {
     background-position: 0;
     color: wheat;
   }
@@ -289,7 +295,7 @@
         width: 100%;
     }
 
-    .aboutRight > button {
+    .aboutRight > a > button {
         margin-top: 0rem;
         margin-left: 1rem;
     }

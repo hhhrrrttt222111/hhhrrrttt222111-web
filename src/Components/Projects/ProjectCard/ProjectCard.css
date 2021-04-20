@@ -6,7 +6,7 @@
     margin: 1rem !important;
     cursor: pointer;
     border-radius: 20px;
-    background-color: rgba(202, 196, 196, 0.829);
+    background-color: var(--project-card);
     transition: 0.2s;
 }
 
@@ -36,6 +36,10 @@
     top: 25%;
     left: 10%;
     width: 70%;
+    font-family: 'Courgette', cursive;
+    font-size: 1.25rem;
+    text-shadow: 0px 1px var(--framework-color);
+    color: var(--text-color-grey);
 }
 
 .project_framework {
@@ -45,11 +49,12 @@
     top: 0;
     left: 10%;
     font-weight: 600;
-    background-color: blueviolet;
-    color: white;
+    color: var(--text-color-secondary);
+    background-color: var(--framework-color);
     padding: 0.65rem;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    font-family: 'Alef', sans-serif;
 }
 
 .proj_content {
@@ -68,17 +73,20 @@
     padding: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: brown;
-    color: darksalmon;
+    font-weight: 600;
+    border: 2px solid var(--about-avatar);
+    color: var(--about-avatar);
+    border-color: var(--about-avatar);
+    white-space: nowrap !important;
     border-radius: 20px;
 }
 
 .proj_content > button:hover {
-    background-color: brown;
+
 }
 
 .projectContainer:hover .proj_image {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .projectContainer:hover .project_title {
@@ -92,16 +100,31 @@
     opacity: 1;
 }
 
+.MuiDialog-paper {
+    background-color: #b3ffcc !important;
+}
+
+.MuiDialogContent-root {
+    -ms-overflow-style: none !important;  
+    scrollbar-width: none !important;  
+}
+.MuiDialogContent-root::-webkit-scrollbar {
+    display: none;
+}
+
 .tech_header {
     padding: 1rem;
     padding-bottom: 0;
     font-size: 20px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 
 .techs {
     padding: 1rem;
     font-size: 16px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300 !important;
 }
 
 .dialog_img {

@@ -24,7 +24,8 @@
 }
 
 .projects_container {
-    padding: 3rem !important;
+    padding: 2rem !important;
+    padding-top: 3rem !important;
 }
 
 
@@ -35,9 +36,48 @@
     white-space: nowrap;
     padding: 1rem;
     border-radius: 10px;
-    background-color: cadetblue;
+    background-color: var(--about-avatar);
     color: wheat;
 }
 .projects > button:hover {
-    background-color: rgba(95, 158, 160, 0.801);
+    background-color: var(--about-avatar);
 }
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+  
+  
+  
+@media screen and (max-width: 992px) {
+    .projects_container {
+        padding: 0rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .projects {
+        padding: 2rem;
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+  
+  @media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  
+}
+  
+  
