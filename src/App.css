@@ -20,6 +20,15 @@
     --education-h5: #38342e;
     --education-h4: black;
     --copyright-bg-color: #b3ffb3;
+    --pacman-color: #1d1c1c;
+    --c1-color: #504949;
+    --c2-color: #070707;
+    --c3-color: #6b6161;
+    --c4-color: #786d6d;
+    --c5-color: #867979;
+    --c6-color: #928787;
+    --c7-color: #070707;
+    --c8-color: #504949;
 }
   
 [data-theme="dark"]{
@@ -44,9 +53,20 @@
     --education-h5: #4effa7;
     --education-h4: #e8e6e3;
     --copyright-bg-color: #262626;
+    --pacman-color: #009933;
+    --c1-color: #80ffaa;
+    --c2-color: #4dff88;
+    --c3-color: #1aff66;
+    --c4-color: #00e64d;
+    --c5-color: #00cc44;
+    --c6-color: #00b33c;
+    --c7-color: #009933;
+    --c8-color: #66ff99;
 }
 
 .app{
     background-color: var(--main-bg-color);
 }
+
+
 

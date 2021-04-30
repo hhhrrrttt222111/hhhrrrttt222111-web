@@ -202,6 +202,13 @@
     background-color: var(--contact-input-bg);
 }
 
+.MuiOutlinedInput-colorSecondary.Mui-focused
+.MuiOutlinedInput-notchedOutline {
+    border-color: var(--about-avatar) !important;
+} 
+
+
+
 
 .contact_footer {
     /* display: flex;

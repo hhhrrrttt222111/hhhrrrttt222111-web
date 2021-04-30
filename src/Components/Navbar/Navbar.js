@@ -149,7 +149,7 @@ function Navbar() {
 
             <HrtDialog />
             
-            <div className="navbar_left">
+            <div className="navbar_left noselect">
                 <NavLink to="/#home" smooth={true} spy="true" duration={2000}>
                     <span>Home</span>
                 </NavLink>

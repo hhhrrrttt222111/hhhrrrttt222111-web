@@ -23,6 +23,7 @@
     height: 100%;
     border-radius: 100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .main_left {
@@ -38,6 +39,7 @@
     filter: grayscale(100%);
     opacity: 0.5;	
     object-fit: cover;
+    pointer-events: none;
 }
 
 .main_right {

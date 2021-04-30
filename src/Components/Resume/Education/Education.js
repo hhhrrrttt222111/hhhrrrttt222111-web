@@ -44,7 +44,17 @@ function Education() {
                     </Fade>
                 </Grid>
             </div> 
-
+            <main className="pacman-container">
+                <div className="pacman"></div>
+                <div className="path1"></div>
+                <div className="path2"></div>
+                <div className="path3"></div>
+                <div className="path4"></div>
+                <div className="path5"></div>
+                <div className="path6"></div>
+                <div className="path7"></div>
+                <div className="path8"></div>
+            </main>
         </div>
     )
 }

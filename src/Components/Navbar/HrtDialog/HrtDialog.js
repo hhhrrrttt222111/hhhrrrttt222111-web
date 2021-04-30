@@ -105,7 +105,7 @@ function HrtDialog() {
     };
 
     return (
-        <div className="hrtDialog" >
+        <div className="hrtDialog noselect" >
             <h3 onClick={handleHrtOpen}>@hhhrrrttt222111</h3>
 
 

@@ -20,7 +20,7 @@ function Main() {
                     <img src={hrt} alt="" />
                 </div>
 
-                <div className="main_right">
+                <div className="main_right noselect">
                     <TextLoop springConfig={{ stiffness: 180, damping: 8 }} interval={2000} noWrap={true} mask={true}>
                         <h3>{`< PR0GRAMM3R />`}</h3>
                         <h3>{`{ FR0NTEND DEVEL0PER }`}</h3>
