@@ -104,6 +104,10 @@
         display: flex;
     }
 
+    .pacman-container, .pacman, .path {
+      display: none !important;
+  }
+
 }
 
 @media screen and (max-width: 800px) {

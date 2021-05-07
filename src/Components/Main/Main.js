@@ -10,7 +10,18 @@ import HemanthR from '../../assets/HemanthR.pdf'
 
 import './Main.css'
 
+
+const quotes = [
+    'Dreams are no shadows, but the very substances and calamities of my life!',
+    'I do see the beauty in the rules, the invisible code of chaos hiding behind the menacing face of order.',
+    'A bug is never just a mistake. It represents something bigger. An error of thinking that makes you who you are.',
+    'If you want to change things, perhaps you should try from within, because this is what happens from the outside.'
+]
+
 function Main() {
+
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
     return (
         <div className="main" id="home">
             <div className="main_left">
@@ -27,10 +38,7 @@ function Main() {
                         <h3>{` HÂÇʞëŘ ;`}</h3>
                     </TextLoop>
                     <p>
-                        loremlorem loremloremlor emlorem loremlorem loremlore
-                        mloremlorem
-                        loremlore mloremloremlorem loremlor  emloremloremloreml
-                        oremloreml oremloremlorem
+                        {quote}
                     </p>
                     <a href={HemanthR} download="Hemanth_CV">
                         <Button size="large" endIcon={<ArrowDownwardIcon />}>
