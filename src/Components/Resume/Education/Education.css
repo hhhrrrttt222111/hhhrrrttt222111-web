@@ -142,6 +142,10 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 
 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+    .education_container {
+      margin-left: -1rem;
+    }
     .education_item {
         margin-top: 1.5rem !important;
         padding: 1rem;

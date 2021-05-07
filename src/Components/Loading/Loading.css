@@ -1,0 +1,100 @@
+.loadingContainer {
+  height: 100vh; 
+  background-color: #1d1c1cb7;
+}
+
+.loading{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); 
+  }
+  .load{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #00b33c;
+    border-radius: 50%;
+    animation: loading 1.5s cubic-bezier(.8, .5, .2, 1.4) infinite;
+    transform-origin: bottom center;
+    position: relative;
+    margin: 0.5rem;
+  }
+  @keyframes loading{
+    0%{
+      transform: translateY(0px);
+      background-color: #00b33c;
+    }
+    50%{
+      transform: translateY(50px);
+      background-color: #66ff66;
+    }
+    100%{
+      transform: translateY(0px);
+      background-color: #00b33c;
+    }
+  }
+  .load-1{
+    animation-delay: 0.1s;
+  }
+  .load-2{
+    animation-delay: 0.2s;
+  }
+  .load-3{
+    animation-delay: 0.3s;
+  }
+  .load-4{
+    animation-delay: 0.4s;
+  }
+  .load-5{
+    animation-delay: 0.5s;
+  }
+  .load-6{
+    animation-delay: 0.6s;
+  }
+  .load-7{
+    animation-delay: 0.7s;
+  }
+  .load-8{
+    animation-delay: 0.8s;
+  }
+  
+  
+  
+  
+
+  @media (min-width: 992px) and (max-width: 1380px) {
+
+  }
+  
+  
+  @media screen and (max-width: 992px) {
+    .load{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin: 0.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+  }
+  
+  @media screen and (max-width: 400px) {
+  
+  }
+    
+  @media only screen and (min-device-width: 320px) and (max-device-width: 
+    480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  
+  }
+  
+  
+  @media only screen and (device-width: 768px) {
+  
+  }
