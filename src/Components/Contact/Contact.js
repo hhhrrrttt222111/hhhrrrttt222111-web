@@ -78,7 +78,9 @@ function Contact() {
                     email: email,
                     message: msg
                 });
-            } else {
+
+                setSuccessMsg(true)
+            } else if (!validateEmail(email)) {
                 setInvalidEmail(true);
             }
 
@@ -86,7 +88,6 @@ function Contact() {
             setName("");
             setEmail("");
             setMsg("")
-            setSuccessMsg(true)
 
         } else {
             setAllFields(true)
